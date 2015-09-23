@@ -10,6 +10,7 @@
 
 #import "QCComposition.h"
 
+//TODO: Mac Support
 @interface QCCompositionLayer : CAEAGLLayer
 
 - (instancetype)initWithComposition:(QCComposition *)composition;

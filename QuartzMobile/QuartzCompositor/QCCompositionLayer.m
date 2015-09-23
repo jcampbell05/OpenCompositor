@@ -49,15 +49,19 @@
 
 - (instancetype)initWithPatch:(id)patch
 {
-//    void * -[QCCompositionLayer initWithPatch:](void * self, void * _cmd, void * arg2) {
-//        r14 = arg2;
-//        r15 = _cmd;
-//        rbx = self;
-//        if (r14 == 0x0) {
-//            rdx = *_NSGenericException;
-//            r8 = "patch";
-//            _GFThrowException(rbx, r15, rdx, @"Argument \"%s\" cannot be null", r8, r9, stack[2048]);
-//        }
+    if (!patch)
+    {
+        //TODO: Implement _GFThrowException
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"Argument \"%s\" cannot be null", "patch"];
+    }
+    
+    self = [super init];
+    
+    if (self)
+    {
+        self.privateLayer = self;
+    }
 //        r12 = [[rbx super] init];
 //        if (r12 != 0x0) {
 //            rax = NSAllocateCollectable(0x90, 0x1);
