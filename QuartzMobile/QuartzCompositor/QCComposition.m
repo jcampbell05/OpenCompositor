@@ -66,28 +66,25 @@
     if (self)
     {
         self.identifier = @"";
+        
+        self.protocols = @[];
         //TODO:
-        //        rax = [NSArray alloc];
         //        rax = [rax initWithObjects:_QCCompositionProtocolImageFilter count:0x1];
-        //        objc_assign_ivar(rax, r12, *_OBJC_IVAR_$_QCComposition._protocols);
-        //        r15 = [NSDictionary alloc];
+        
+        self.attributes = @{};
+        
+        if (!self.attributes)
+        {
+            //TODO: Implement _GFThrowException
+            [NSException raise:NSInternalInconsistencyException
+                        format:@"Object creation failed"];
+        }
+        
         //        rdx = __GetLocalizedString(@"Original", 0x0);
         //        rax = [r15 initWithObjectsAndKeys:rdx];
-        //        rcx = _OBJC_IVAR_$_QCComposition._attributes;
-        //        rbx = *rcx;
-        //        rdx = rbx;
-        //        objc_assign_ivar(rax, r12, rdx);
-        //        if (*(r12 + rbx) == 0x0) {
-        //            rdx = *_NSGenericException;
-        //            rcx = @"Object creation failed";
-        //            _GFThrowException(r12, r14, rdx, rcx, 0x0, r9, stack[2048]);
-        //        }
-        //        rax = [NSArray alloc];
-        //        rax = [rax initWithObjects:@"_protocolInput_Image" count:0x1, 0x0];
-        //        objc_assign_ivar(rax, r12, *_OBJC_IVAR_$_QCComposition._inputKeys);
-        //        rax = [NSArray alloc];
-        //        rax = [rax initWithObjects:@"_protocolOutput_Image" count:0x1, 0x0];
-        //        objc_assign_ivar(rax, r12, *_OBJC_IVAR_$_QCComposition._outputKeys);
+        
+        self.inputKeys = @[@"_protocolInput_Image"];
+        self.outputKeys = @[@"_protocolOutput_Image"];
     }
     
     return self;
