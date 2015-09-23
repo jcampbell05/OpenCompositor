@@ -12,7 +12,10 @@
 
 + (void)initialize
 {
-    //TODO: Implement code.
+    if ([QCImage class] == self)
+    {
+        //TODO: Register Providers.
+    }
 }
 
 @end
