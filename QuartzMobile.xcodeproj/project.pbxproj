@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740EE1DD1BB2D5E600413470 /* QCCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B5641BB2705100E30A9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5631BB2705100E30A9F /* main.m */; };
 		74F3B5671BB2705100E30A9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5661BB2705100E30A9F /* AppDelegate.m */; };
 		74F3B56A1BB2705100E30A9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5691BB2705100E30A9F /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		740EE1DB1BB2D5E600413470 /* QCCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCompositionLayer.h; sourceTree = "<group>"; };
+		740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCompositionLayer.m; sourceTree = "<group>"; };
 		74F3B55F1BB2705100E30A9F /* QuartzMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuartzMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F3B5631BB2705100E30A9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74F3B5651BB2705100E30A9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				74F3B5951BB27C3300E30A9F /* QCImageBufferProvider.m */,
 				74F3B5971BB27C4300E30A9F /* QCImageProvider.h */,
 				74F3B5981BB27C4300E30A9F /* QCImageProvider.m */,
+				740EE1DB1BB2D5E600413470 /* QCCompositionLayer.h */,
+				740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */,
 			);
 			path = QuartzCompositor;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				74F3B5671BB2705100E30A9F /* AppDelegate.m in Sources */,
 				74F3B5991BB27C4300E30A9F /* QCImageProvider.m in Sources */,
 				74F3B58A1BB2713400E30A9F /* QCComposition.m in Sources */,
+				740EE1DD1BB2D5E600413470 /* QCCompositionLayer.m in Sources */,
 				74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */,
 				74F3B5641BB2705100E30A9F /* main.m in Sources */,
 				74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */,
@@ -446,6 +452,7 @@
 				74F3B5831BB2705100E30A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74F3B5841BB2705100E30A9F /* Build configuration list for PBXNativeTarget "QuartzMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +461,7 @@
 				74F3B5861BB2705100E30A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
