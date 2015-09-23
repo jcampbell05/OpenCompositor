@@ -27,7 +27,9 @@
                 if(![backing isKindOfClass:[NSDictionary class]] &&
                    ![backing isKindOfClass:[NSURL class]])
                 {
-                    //TODO: NSInternalInconsistencyException
+                    //TODO: Implement _GFThrowException
+                    [NSException raise:NSInternalInconsistencyException
+                                format:@"Inconsistent state"];
                 }
             }
         }
