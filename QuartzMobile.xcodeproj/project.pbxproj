@@ -17,6 +17,7 @@
 		74F3B58A1BB2713400E30A9F /* QCComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5891BB2713400E30A9F /* QCComposition.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B58C1BB2792000E30A9F /* GFNodeManager.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B58F1BB27A5D00E30A9F /* QCImage.m */; settings = {ASSET_TAGS = (); }; };
+		74F3B5931BB27AA800E30A9F /* QCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5921BB27AA800E30A9F /* QCObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		74F3B58C1BB2792000E30A9F /* GFNodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNodeManager.m; sourceTree = "<group>"; };
 		74F3B58E1BB27A5D00E30A9F /* QCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImage.h; sourceTree = "<group>"; };
 		74F3B58F1BB27A5D00E30A9F /* QCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCImage.m; sourceTree = "<group>"; };
+		74F3B5911BB27AA800E30A9F /* QCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCObject.h; sourceTree = "<group>"; };
+		74F3B5921BB27AA800E30A9F /* QCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				74F3B58C1BB2792000E30A9F /* GFNodeManager.m */,
 				74F3B58E1BB27A5D00E30A9F /* QCImage.h */,
 				74F3B58F1BB27A5D00E30A9F /* QCImage.m */,
+				74F3B5911BB27AA800E30A9F /* QCObject.h */,
+				74F3B5921BB27AA800E30A9F /* QCObject.m */,
 			);
 			path = QuartzCompositor;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */,
 				74F3B5641BB2705100E30A9F /* main.m in Sources */,
 				74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */,
+				74F3B5931BB27AA800E30A9F /* QCObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

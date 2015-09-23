@@ -1,5 +1,5 @@
 //
-//  QCImage.h
+//  QCObject.m
 //  QuartzMobile
 //
 //  Created by James Campbell on 23/09/2015.
@@ -8,6 +8,6 @@
 
 #import "QCObject.h"
 
-@interface QCImage : QCObject
+@implementation QCObject
 
 @end
