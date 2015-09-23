@@ -18,6 +18,8 @@
 		74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B58C1BB2792000E30A9F /* GFNodeManager.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B58F1BB27A5D00E30A9F /* QCImage.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B5931BB27AA800E30A9F /* QCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5921BB27AA800E30A9F /* QCObject.m */; settings = {ASSET_TAGS = (); }; };
+		74F3B5961BB27C3300E30A9F /* QCImageBufferProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5951BB27C3300E30A9F /* QCImageBufferProvider.m */; settings = {ASSET_TAGS = (); }; };
+		74F3B5991BB27C4300E30A9F /* QCImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5981BB27C4300E30A9F /* QCImageProvider.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		74F3B58F1BB27A5D00E30A9F /* QCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCImage.m; sourceTree = "<group>"; };
 		74F3B5911BB27AA800E30A9F /* QCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCObject.h; sourceTree = "<group>"; };
 		74F3B5921BB27AA800E30A9F /* QCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCObject.m; sourceTree = "<group>"; };
+		74F3B5941BB27C3300E30A9F /* QCImageBufferProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImageBufferProvider.h; sourceTree = "<group>"; };
+		74F3B5951BB27C3300E30A9F /* QCImageBufferProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCImageBufferProvider.m; sourceTree = "<group>"; };
+		74F3B5971BB27C4300E30A9F /* QCImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCImageProvider.h; sourceTree = "<group>"; };
+		74F3B5981BB27C4300E30A9F /* QCImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCImageProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,10 @@
 				74F3B58F1BB27A5D00E30A9F /* QCImage.m */,
 				74F3B5911BB27AA800E30A9F /* QCObject.h */,
 				74F3B5921BB27AA800E30A9F /* QCObject.m */,
+				74F3B5941BB27C3300E30A9F /* QCImageBufferProvider.h */,
+				74F3B5951BB27C3300E30A9F /* QCImageBufferProvider.m */,
+				74F3B5971BB27C4300E30A9F /* QCImageProvider.h */,
+				74F3B5981BB27C4300E30A9F /* QCImageProvider.m */,
 			);
 			path = QuartzCompositor;
 			sourceTree = "<group>";
@@ -241,10 +251,12 @@
 			files = (
 				74F3B56A1BB2705100E30A9F /* ViewController.m in Sources */,
 				74F3B5671BB2705100E30A9F /* AppDelegate.m in Sources */,
+				74F3B5991BB27C4300E30A9F /* QCImageProvider.m in Sources */,
 				74F3B58A1BB2713400E30A9F /* QCComposition.m in Sources */,
 				74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */,
 				74F3B5641BB2705100E30A9F /* main.m in Sources */,
 				74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */,
+				74F3B5961BB27C3300E30A9F /* QCImageBufferProvider.m in Sources */,
 				74F3B5931BB27AA800E30A9F /* QCObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
