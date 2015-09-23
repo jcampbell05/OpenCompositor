@@ -14,8 +14,12 @@
 @interface QCComposition ()
 
 @property (nonatomic, strong) id backing;
+
 @property (nonatomic, strong) NSDictionary *attributes;
 @property (nonatomic, strong) NSString *identifier;
+
+@property (nonatomic, strong) NSArray *inputKeys;
+@property (nonatomic, strong) NSArray *outputKeys;
 @property (nonatomic, strong) NSArray *protocols;
 
 @end
