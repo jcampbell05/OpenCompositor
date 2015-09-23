@@ -52,6 +52,18 @@
     return composition;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        
+    }
+    
+    return self;
+}
+
 - (instancetype)initWithBacking:(id)backing
 {
     if (backing)
