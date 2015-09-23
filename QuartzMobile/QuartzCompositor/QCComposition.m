@@ -14,6 +14,8 @@
 @interface QCComposition ()
 
 @property (nonatomic, strong) id backing;
+@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSArray *protocols;
 
 @end
 
@@ -58,7 +60,7 @@
     
     if (self)
     {
-        
+        self.identifier = @"";
     }
     
     return self;
