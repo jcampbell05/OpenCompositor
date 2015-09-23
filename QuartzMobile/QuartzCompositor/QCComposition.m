@@ -26,22 +26,30 @@
     [GFNodeManager unlock];
 }
 
-+ (instancetype)compositionWithFile:(NSString *)filePath;
++ (instancetype)compositionWithFile:(NSString *)path;
 {
-    if ([filePath length] == 0)
+    if ([path length] == 0)
     {
         //TODO: Implement _GFThrowException
         [NSException raise:NSInternalInconsistencyException
                     format:@"String argument \"%s\" cannot be empty", "path"];
     }
     
-    QCComposition *composition = [[QCComposition alloc] initWithBacking:filePath];
+    QCComposition *composition = [[QCComposition alloc] initWithBacking:path];
     return composition;
 }
 
-+ (instancetype)compositionWithData:(NSData *)compositionData
++ (instancetype)compositionWithData:(NSData *)data
 {
+    if (!data)
+    {
+        //TODO: Implement _GFThrowException
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"Argument \"%s\" cannot be null", "data"];
+    }
     
+    QCComposition *composition = [[QCComposition alloc] initWithBacking:data];
+    return composition;
 }
 
 - (instancetype)initWithBacking:(id)backing

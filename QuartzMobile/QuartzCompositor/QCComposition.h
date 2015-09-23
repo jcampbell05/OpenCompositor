@@ -10,7 +10,7 @@
 
 @interface QCComposition : NSObject
 
-+ (instancetype)compositionWithFile:(NSString *)filePath;
-+ (instancetype)compositionWithData:(NSData *)compositionData;
++ (instancetype)compositionWithFile:(NSString *)path;
++ (instancetype)compositionWithData:(NSData *)data;
 
 @end
