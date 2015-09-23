@@ -8,6 +8,8 @@
 
 #import "QCComposition.h"
 
+#import "GFNodeManager.h"
+
 @interface QCComposition ()
 
 @property (nonatomic, strong) id backing;
@@ -15,6 +17,13 @@
 @end
 
 @implementation QCComposition
+
++ (void)initialize
+{
+    [GFNodeManager lock];
+    //TODO: Init Image class here.
+    [GFNodeManager unlock];
+}
 
 - (instancetype)initWithBacking:(id)backing
 {
