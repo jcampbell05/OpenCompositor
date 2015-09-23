@@ -14,6 +14,7 @@
 		74F3B56F1BB2705100E30A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F3B56E1BB2705100E30A9F /* Assets.xcassets */; };
 		74F3B5721BB2705100E30A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F3B5701BB2705100E30A9F /* LaunchScreen.storyboard */; };
 		74F3B57D1BB2705100E30A9F /* QuartzMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B57C1BB2705100E30A9F /* QuartzMobileTests.m */; };
+		74F3B58A1BB2713400E30A9F /* QCComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5891BB2713400E30A9F /* QCComposition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		74F3B5781BB2705100E30A9F /* QuartzMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuartzMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F3B57C1BB2705100E30A9F /* QuartzMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzMobileTests.m; sourceTree = "<group>"; };
 		74F3B57E1BB2705100E30A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F3B5881BB2713400E30A9F /* QCComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCComposition.h; sourceTree = "<group>"; };
+		74F3B5891BB2713400E30A9F /* QCComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCComposition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		74F3B5611BB2705100E30A9F /* QuartzMobile */ = {
 			isa = PBXGroup;
 			children = (
+				74F3B5871BB2712300E30A9F /* QuartzCompositor */,
 				74F3B5651BB2705100E30A9F /* AppDelegate.h */,
 				74F3B5661BB2705100E30A9F /* AppDelegate.m */,
 				74F3B5681BB2705100E30A9F /* ViewController.h */,
@@ -109,6 +113,15 @@
 				74F3B57E1BB2705100E30A9F /* Info.plist */,
 			);
 			path = QuartzMobileTests;
+			sourceTree = "<group>";
+		};
+		74F3B5871BB2712300E30A9F /* QuartzCompositor */ = {
+			isa = PBXGroup;
+			children = (
+				74F3B5881BB2713400E30A9F /* QCComposition.h */,
+				74F3B5891BB2713400E30A9F /* QCComposition.m */,
+			);
+			path = QuartzCompositor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +226,7 @@
 			files = (
 				74F3B56A1BB2705100E30A9F /* ViewController.m in Sources */,
 				74F3B5671BB2705100E30A9F /* AppDelegate.m in Sources */,
+				74F3B58A1BB2713400E30A9F /* QCComposition.m in Sources */,
 				74F3B5641BB2705100E30A9F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
