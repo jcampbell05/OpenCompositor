@@ -67,11 +67,10 @@
     {
         self.identifier = @"";
         
-        self.protocols = @[];
-        //TODO:
-        //        rax = [rax initWithObjects:_QCCompositionProtocolImageFilter count:0x1];
+        self.protocols = @[]; //[rax initWithObjects:_QCCompositionProtocolImageFilter count:0x1];
         
-        self.attributes = @{};
+        //TODO: Implement __GetLocalizedString
+        self.attributes = @{NSLocalizedString(@"Original", nil): [NSNull null]};
         
         if (!self.attributes)
         {
@@ -79,9 +78,6 @@
             [NSException raise:NSInternalInconsistencyException
                         format:@"Object creation failed"];
         }
-        
-        //        rdx = __GetLocalizedString(@"Original", 0x0);
-        //        rax = [r15 initWithObjectsAndKeys:rdx];
         
         self.inputKeys = @[@"_protocolInput_Image"];
         self.outputKeys = @[@"_protocolOutput_Image"];
