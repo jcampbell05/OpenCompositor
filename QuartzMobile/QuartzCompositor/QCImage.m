@@ -10,4 +10,9 @@
 
 @implementation QCImage
 
++ (void)initialize
+{
+    //TODO: Implement code.
+}
+
 @end
