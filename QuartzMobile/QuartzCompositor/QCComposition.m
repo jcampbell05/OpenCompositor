@@ -8,6 +8,39 @@
 
 #import "QCComposition.h"
 
+@interface QCComposition ()
+
+@property (nonatomic, strong) id backing;
+
+@end
+
 @implementation QCComposition
+
+- (instancetype)initWithBacking:(id)backing
+{
+    if (backing)
+    {
+        if (![backing isKindOfClass:[NSString class]])
+        {
+            if(![backing isKindOfClass:[NSData class]])
+            {
+                if(![backing isKindOfClass:[NSDictionary class]] &&
+                   ![backing isKindOfClass:[NSURL class]])
+                {
+                    //TODO: NSInternalInconsistencyException
+                }
+            }
+        }
+        
+        self = [super init];
+        
+        if (self)
+        {
+            self.backing = [backing copy];
+        }
+    }
+    
+    return self;
+}
 
 @end
