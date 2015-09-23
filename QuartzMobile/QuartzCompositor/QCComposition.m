@@ -9,6 +9,7 @@
 #import "QCComposition.h"
 
 #import "GFNodeManager.h"
+#import "QCImage.h"
 
 @interface QCComposition ()
 
@@ -21,7 +22,7 @@
 + (void)initialize
 {
     [GFNodeManager lock];
-    //TODO: Init Image class here.
+    [QCImage class];
     [GFNodeManager unlock];
 }
 
