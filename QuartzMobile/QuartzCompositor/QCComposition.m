@@ -11,6 +11,8 @@
 #import "GFNodeManager.h"
 #import "QCImage.h"
 
+NSString * const QCCompositionProtocolImageFilter = @"com.apple.QuartzComposer.protocol.image-filter";
+
 @interface QCComposition ()
 
 @property (nonatomic, strong) id backing;
@@ -67,7 +69,7 @@
     {
         self.identifier = @"";
         
-        self.protocols = @[]; //[rax initWithObjects:_QCCompositionProtocolImageFilter count:0x1];
+        self.protocols = @[QCCompositionProtocolImageFilter];
         
         //TODO: Implement __GetLocalizedString
         self.attributes = @{NSLocalizedString(@"Original", nil): [NSNull null]};

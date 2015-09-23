@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const QCCompositionProtocolImageFilter;
+
 @interface QCComposition : NSObject
 
 + (instancetype)compositionWithFile:(NSString *)path;
