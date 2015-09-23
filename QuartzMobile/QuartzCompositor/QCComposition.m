@@ -26,6 +26,24 @@
     [GFNodeManager unlock];
 }
 
++ (instancetype)compositionWithFile:(NSString *)filePath;
+{
+    if ([filePath length] == 0)
+    {
+        //TODO: Implement _GFThrowException
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"String argument \"%s\" cannot be empty", "path"];
+    }
+    
+    QCComposition *composition = [[QCComposition alloc] initWithBacking:filePath];
+    return composition;
+}
+
++ (instancetype)compositionWithData:(NSData *)compositionData
+{
+    
+}
+
 - (instancetype)initWithBacking:(id)backing
 {
     if (backing)
