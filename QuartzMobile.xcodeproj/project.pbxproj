@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		740EE1DD1BB2D5E600413470 /* QCCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */; settings = {ASSET_TAGS = (); }; };
+		741C35461BB5C5BC00BC50D5 /* QCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C35451BB5C5BC00BC50D5 /* QCView.m */; settings = {ASSET_TAGS = (); }; };
 		74F3B5641BB2705100E30A9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5631BB2705100E30A9F /* main.m */; };
 		74F3B5671BB2705100E30A9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5661BB2705100E30A9F /* AppDelegate.m */; };
 		74F3B56A1BB2705100E30A9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F3B5691BB2705100E30A9F /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		740EE1DB1BB2D5E600413470 /* QCCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCompositionLayer.h; sourceTree = "<group>"; };
 		740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCompositionLayer.m; sourceTree = "<group>"; };
+		741C35441BB5C5BC00BC50D5 /* QCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCView.h; sourceTree = "<group>"; };
+		741C35451BB5C5BC00BC50D5 /* QCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCView.m; sourceTree = "<group>"; };
 		74F3B55F1BB2705100E30A9F /* QuartzMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuartzMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F3B5631BB2705100E30A9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74F3B5651BB2705100E30A9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				74F3B5981BB27C4300E30A9F /* QCImageProvider.m */,
 				740EE1DB1BB2D5E600413470 /* QCCompositionLayer.h */,
 				740EE1DC1BB2D5E600413470 /* QCCompositionLayer.m */,
+				741C35441BB5C5BC00BC50D5 /* QCView.h */,
+				741C35451BB5C5BC00BC50D5 /* QCView.m */,
 			);
 			path = QuartzCompositor;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				74F3B58D1BB2792000E30A9F /* GFNodeManager.m in Sources */,
 				74F3B5641BB2705100E30A9F /* main.m in Sources */,
 				74F3B5901BB27A5D00E30A9F /* QCImage.m in Sources */,
+				741C35461BB5C5BC00BC50D5 /* QCView.m in Sources */,
 				74F3B5961BB27C3300E30A9F /* QCImageBufferProvider.m in Sources */,
 				74F3B5931BB27AA800E30A9F /* QCObject.m in Sources */,
 			);

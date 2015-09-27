@@ -8,18 +8,40 @@
 
 #import "QCCompositionLayer.h"
 
+#import "QCComposition.h"
+
 @interface QCCompositionLayer ()
 
-@property (nonatomic, strong) id privateLayer;
+@property (nonatomic, strong) id timebase;
+@property (nonatomic, assign) NSInteger asynchronous;
+
+- (instancetype)initWithFile:(NSString *)file;
 
 @end
 
 @implementation QCCompositionLayer
 
+- (instancetype)init
+{
+    self = [self initWithFile:nil];
+    
+    return self;
+}
+
+- (instancetype)initWithFile:(NSString *)file
+{
+    QCComposition *composition = [QCComposition compositionWithFile:file];
+    
+    self = [self initWithComposition:composition];
+    
+    return self;
+}
+
 - (instancetype)initWithComposition:(QCComposition *)composition
 {
     self = [self initWithComposition:composition
                             andPatch:nil];
+    self.delegate = self;
     
     return self;
 }
@@ -34,17 +56,7 @@
         patchToUse = [self patch];
     }
     
-    if (patchToUse)
-    {
-        self = [self initWithPatch:patch];
-        
-        if (self)
-        {
-            self = self.privateLayer;
-        }
-    }
-    
-    return self;
+    return [self initWithPatch:patch];
 }
 
 - (instancetype)initWithPatch:(id)patch
@@ -60,32 +72,11 @@
     
     if (self)
     {
-        self.privateLayer = self;
+        //TODO: Figure this bit out.
+        self.asynchronous = ((self.timebase != nil) ? 0x1 : 0x0) & 0xff;
     }
-//        r12 = [[rbx super] init];
-//        if (r12 != 0x0) {
-//            rax = NSAllocateCollectable(0x90, 0x1);
-//            rbx = *_OBJC_IVAR_$_QCCompositionLayer._QCCompositionLayerPrivate;
-//            objc_assign_ivar(rax, r12, rbx);
-//            rdi = *(r12 + rbx);
-//            if (rdi == 0x0) {
-//                rdx = *_NSInvalidArgumentException;
-//                _GFThrowException(r12, r15, rdx, @"Memory allocation for private structure failed", r8, r9, stack[2048]);
-//                rbx = *_OBJC_IVAR_$_QCCompositionLayer._QCCompositionLayerPrivate;
-//                rdi = *(r12 + rbx);
-//            }
-//            __bzero(rdi, 0x90);
-//            rbx = *(r12 + rbx);
-//            rax = [r14 retain];
-//            objc_assign_strongCast(rax, rbx + 0x8);
-//            *(int128_t *)(rbx + 0x70) = intrinsic_movups(*(int128_t *)(rbx + 0x70), intrinsic_movaps(xmm0, *(int128_t *)0x4fb830));
-//            [r12 _finishInitialization];
-//        }
-//        rax = r12;
-//        return rax;
-//    }
     
-    return nil;
+    return self;
 }
 
 - (id)patch
