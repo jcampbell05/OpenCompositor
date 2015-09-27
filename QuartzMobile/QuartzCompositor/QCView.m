@@ -26,6 +26,8 @@
 {
     return [QCCompositionLayer class];
 }
+
+//TODO:
 //
 //void * -[QCView initWithFrame:optionFlags:](void * self, void * _cmd, struct CGRect arg2, unsigned long long arg3) {
 //    r14 = arg2;
@@ -99,26 +101,32 @@
 //    return rax;
 //}
 
+//TODO:
 //int ___36-[QCView initWithFrame:optionFlags:]_block_invoke(int arg0) {
 //    rdi = *(*(*(arg0 + 0x20) + 0x8) + 0x28);
 //    rax = [rdi _renderTimer];
 //    return rax;
 //}
+//
 
-- (BOOL)loadCompositionFromFile:(NSString*)path stateOK:(char *)fp12
+//TODO:
+//- (BOOL)loadCompositionFromFile:(NSString*)path stateOK:(char *)fp12
+//{
+//    return NO;
+//}
+
+- (BOOL)loadCompositionFromFile:(NSString *)path
 {
-    return NO;
+    QCComposition *composition = [QCComposition compositionWithFile:path];
+    
+    return [self loadComposition:composition];
 }
 
-- (BOOL)loadCompositionFromFile:(NSString*)path
-{
-    return NO;
-}
-
-- (BOOL)loadComposition:(id)fp8 options:(id)fp12 stateOK:(char *)fp16
-{
-    return NO;
-}
+//TODO:
+//- (BOOL)loadComposition:(id)fp8 options:(id)fp12 stateOK:(char *)fp16
+//{
+//    return NO;
+//}
 
 - (BOOL)loadComposition:(QCComposition *)composition
 {
