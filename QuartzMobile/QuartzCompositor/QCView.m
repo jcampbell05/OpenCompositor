@@ -8,9 +8,19 @@
 
 #import "QCView.h"
 
+#import "QCComposition.h"
 #import "QCCompositionLayer.h"
 
 @implementation QCView
+
++ (void)initialize
+{
+    if ([QCView class] == self)
+    {
+        //TODO: Find replacement in iOS
+        //[self exposeBinding:@"patch"];
+    }
+}
 
 + (Class)layerClass
 {
@@ -94,5 +104,25 @@
 //    rax = [rdi _renderTimer];
 //    return rax;
 //}
+
+- (BOOL)loadCompositionFromFile:(NSString*)path stateOK:(char *)fp12
+{
+    return NO;
+}
+
+- (BOOL)loadCompositionFromFile:(NSString*)path
+{
+    return NO;
+}
+
+- (BOOL)loadComposition:(id)fp8 options:(id)fp12 stateOK:(char *)fp16
+{
+    return NO;
+}
+
+- (BOOL)loadComposition:(QCComposition *)composition
+{
+    return NO;
+}
 
 @end
